@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tools:context="com.example.kennethndungu.lab2class.SignUpActivity"
+    tools:showIn="@layout/activity_sign_up">-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/EtMargin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/EtFNameSignUp"
+        android:hint="Enter Firstname"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/EtLNameSignUp"
+        android:hint="Enter Lastname"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/EtEmailSignUp"
+        android:hint="Enter Email"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/EtUsernameSignUp"
+        android:hint="Enter Username"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/EtPasswordSignUp"
+        android:hint="Enter Password"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/EtPhonenumberSignup"
+        android:hint="Enter PhoneNumber"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:id="@+id/BtnCreateAccSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/BtnMargin"
+        android:background="@color/colorAccent"
+        android:onClick="displayToastMsgSignUp"
+        android:text="@string/Signup"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/already"/>
+    <Button
+        android:id="@+id/BtnLoginSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/BtnMargin"
+        android:background="@color/myfavcolor"
+        android:onClick="LoginView"
+        android:text="@string/Login"/>
+    </LinearLayout>
+</LinearLayout>

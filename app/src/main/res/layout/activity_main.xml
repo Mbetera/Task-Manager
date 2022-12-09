@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tools:context="com.example.kennethndungu.lab2class.MainActivity"
+tools:showIn="@layout/activity_main">-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/strathmorelogo"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_marginHorizontal="@dimen/EtMargin"
+        android:id="@+id/txtUsernameLogin"/>
+    <EditText
+        android:id="@+id/txtPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_marginHorizontal="@dimen/EtMargin"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:onClick = "displayToastMsg"
+        android:layout_marginHorizontal="@dimen/BtnMargin"
+        android:background="@color/myfavcolor" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:id="@+id/CBRememberMeLogin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/donthaveaccount"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/BtnCreateAccLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/BtnMargin"
+        android:text="create account"
+        android:background="@color/colorAccent"
+        android:onClick="sendMessage"/>
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_task_title"
+        android:inputType="text"
+        android:id="@+id/EtTitleAddtask"
+        android:layout_marginHorizontal="@dimen/EtMargin"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/EtDescriptionAddtask"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginHorizontal="@dimen/EtMargin"
+        android:hint="@string/task_description"
+        android:inputType="textLongMessage"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/EtMargin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectdate"
+            android:hint="Start Date:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvStartdateAddtask"
+            android:layout_toRightOf="@id/selectdate"
+            android:text=""
+            android:paddingTop="15dp"
+            android:textColor="@color/colorAccent"/>
+            <!-- -->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvDuedateAddtask"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Due Date:"
+            android:id="@+id/BtnDuedateAddtask"
+            android:layout_toLeftOf="@id/TvDuedateAddtask"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvDate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/submission_method"
+        android:inputType="text"
+        android:id="@+id/EtSubmissionAddtask"
+        android:layout_marginHorizontal="@dimen/EtMargin"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_task"
+        android:id="@+id/BtnAddTask"
+        android:layout_marginHorizontal="@dimen/BtnMargin"
+        android:background="@color/myfavcolor"/>
+
+
+</LinearLayout>
